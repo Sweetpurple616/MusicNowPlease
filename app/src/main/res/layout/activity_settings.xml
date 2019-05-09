@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/settingsTV"
+            android:layout_width="173dp"
+            android:layout_height="46dp"
+            android:id="@+id/textView" android:textSize="24sp"
+            android:fontFamily="@font/poppins_semibold" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.036"
+            android:layout_marginTop="28dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.009"/>
+    <TextView
+            android:text="What is your city?"
+            android:layout_width="173dp"
+            android:layout_height="46dp"
+            android:id="@+id/textView2" android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.13"
+            android:layout_marginTop="28dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.129"
+            android:textColor="@color/colorAccent"/>
+    <RadioGroup
+            android:layout_width="209dp"
+            android:layout_height="194dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintVertical_bias="0.287"
+            android:id="@+id/rGroup">
+        <RadioButton
+                android:text="Den Haag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbDenHaag" android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+                android:text="Amsterdam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbAmsterdam" android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+                android:text="Utrecht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbUtrecht" android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+                android:text="Rotterdam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbRotterdam" android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

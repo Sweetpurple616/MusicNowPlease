@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicNowPlease</string>
+    <string name="main_txt">To find out what\'s happening tonight tap the music note</string>
+    <string name="cdNoteButton">This button will guide you to the next fase</string>
+    <string name="cdSettings">This button will guide you to the settings</string>
+    <string name="settingsTV">settings</string>
+</resources>
